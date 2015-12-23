@@ -1,0 +1,7 @@
+match (n) return (n)
+
+MATCH (a) OPTIONAL MATCH (a)-[r1]-() DELETE a,r1
+
+MATCH (n) RETURN n.TwitterAccount LIMIT 10
+
+MATCH (n) RETURN n.screenname LIMIT 10
